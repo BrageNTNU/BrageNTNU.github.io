@@ -19,8 +19,8 @@ jobs:
         run: npm ci
   test:
     needs: build
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Run typescript lint and format check
         run: npm run lint:ts
       - name: Run styles lint and format check
